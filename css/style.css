@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Noto+Sans+Thai+Looped&display=swap');
+
+
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    background: url(https://cdn.discordapp.com/attachments/889668715988283464/1148640856694345748/2.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+section{
+    z-index: -999;
+}
+.textname{ 
+    background-color: red;
+
+/* Create the gradient. */
+background-image: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4);
+
+/* Set the background size and repeat properties. */
+background-size: 100%;
+background-repeat: repeat;
+
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+  }
+
+.about{
+    background-color: white;
+    margin-top: 25%;
+    width: 100%;
+}
+.resumebox{
+  border-right: 1px solid black;
+}
+.resumebox2{
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+@media only screen and (max-width: 1000px),(max-width : 600px) {
+    .about {
+    margin-top: 500px;
+    }
+    .resumebox{
+      border-right: none;
+    }
+  }
+
+    .Resume{
+        background-color: white;
+        width: 100%;
+    }
+    .right-bullet-list {
+      list-style-type: none; /* Remove default bullet points */
+      padding: 0;
+    }
+    
+    .right-bullet-list li {
+      text-align: left; /* Align the text to the left */
+      padding-right: 30px; /* Add space between text and bullet */
+      position: relative;
+    }
+    
+    .right-bullet-list li::before {
+      content: "\2022"; /* Use a Unicode bullet character (•) */
+      position: absolute;
+      right: 0; /* Position the bullet on the right */
+    }
+
+    .Pos{
+      background-color: white;
+      width: 100%;
+  }
+
+  .Skill{
+    background-color: white;
+    width: 100%;
+}
+  
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  background-color: black;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 16px;
+  row-gap: 30px;
+}
+.item {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.priceimg{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
